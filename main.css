@@ -1,0 +1,38 @@
+*{
+	padding:0px;
+	margin:0px;
+}
+div{
+
+	
+
+}
+.navigation{
+	padding:35px;
+	overflow:auto;
+	margin-right:50px;
+}
+.navigationleft{
+	color : #ababab;
+	font-weight:bold;
+	font-family: helvetica;
+	font-size:40px;
+	float:left;
+	width:45%;
+}
+.navigationright{
+	margin-top:9px;
+	margin-left:10%;
+	float:right;
+	overflow:hidden;
+	width:35%;
+}
+.navigationr{
+	padding:5px 15px;
+	background-color:#cdcdcd;
+	float:left;
+	margin:10px 5px 0px 5px;
+	font-family:helvetica;
+	font-size:20px;
+	line-height: 30px;
+}
