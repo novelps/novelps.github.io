@@ -17,8 +17,17 @@ href="https://fonts.googleapis.com/css?family=Lobster&effect=brick-sign">
 		<div style="margin-left:10px; margin-right:10px;"  class="w3-panel w3-dark-grey w3-bar-item w3-mobile w3-right w3-card-2">CONTACT</div>
 	</div>
 
-	<div class="w3-panel">
-		<img height=1000; style="width:100%;" src="nps.jpg" alt="image not available" class="w3-image w3-opacity-min"/>
+	<div class="w3-panel w3-display-container">
+		<img style=" width:100%;" src="nps1.jpg" alt="image not available" class="myslides w3-image w3-opacity-min"/>
+
+		<img style=" width:100%;" src="nps2.jpg" alt="image not available" class="myslides w3-image w3-opacity-min"/>
+
+		<img style=" width:100%;" src="nps3.jpg" alt="image not available" class="myslides w3-image w3-opacity-min"/>
+
+		<img style=" width:100%;" src="nps4.jpg" alt="image not available" class="myslides w3-image w3-opacity-min"/>
+
+		<button class="w3-opacity w3-display-left" onclick="plusDivs(-1)">&#10094</button>
+		<button class="w3-opacity w3-display-right" onclick="plusDivs(+1)">&#10095</button>
 	</div>
 
 	<div class="w3-container">
@@ -75,6 +84,26 @@ href="https://fonts.googleapis.com/css?family=Lobster&effect=brick-sign">
 		
 	<marquee style="color:#fff; background-color:#cdcdcd; font-size:24px; font-family:helvetica; margin:20px;">		This website is under construction 
 	</marquee>
+
+	<script>
+		var slideIndex = 1;
+		showDivs(slideIndex);
+
+		function plusDivs(n) {
+		  showDivs(slideIndex += n);
+		}
+
+		function showDivs(n) {
+		  var i;
+		  var x = document.getElementsByClassName("myslides");
+		  if (n > x.length) {slideIndex = 1}
+		  if (n < 1) {slideIndex = x.length}
+		  for (i = 0; i < x.length; i++) {
+		    x[i].style.display = "none";  
+		  }
+		  x[slideIndex-1].style.display = "block";  
+		}
+	</script>
 
 </body>
 </html>

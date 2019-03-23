@@ -36,3 +36,7 @@ div{
 	font-size:20px;
 	line-height: 30px;
 }
+
+.myslides{
+	display:none;
+}
